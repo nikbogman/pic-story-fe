@@ -1,17 +1,36 @@
 <script>
-	import ShuffleBlocks from "./utils/ShuffleBlocks" 
+	import ShuffleBlocks from "./utils/ShuffleBlocks";
+	import dices from "./constants/dices";
+
+	let sides = [];
+	const count = 3;
+
+	function shuffle() {
+		const shuffled = [];
+		for (const dice of dices) {
+			const i = Math.floor(Math.random() * dice.length);
+			shuffled.push(dice[i]);
+		}
+		sides = [...shuffled];
+		console.log(sides);
+	}
 </script>
 
 <main class="flex flex-col h-screen">
 	<div class="flex justify-center p-8 text-4xl font-bold">PicStory</div>
 	<div class="flex gap-20 justify-center">
 		<div class="flex gap-4">
-			<div class="h-20 aspect-square bg-orange-500 rounded-lg">Img</div>
-			<div class="h-20 aspect-square bg-orange-500 rounded-lg">Img</div>
-			<div class="h-20 aspect-square bg-orange-500 rounded-lg">Img</div>
+			{#each sides as side}
+				<div class="h-20 aspect-square bg-orange-500 rounded-lg">
+					{side.img}
+				</div>
+			{/each}
 		</div>
+
 		<div class="flex items-center gap-4">
-			<button on:click={()=>{ShuffleBlocks(3)}} class="px-4 py-2 bg-orange-500 rounded-lg">Shuffle</button>
+			<button on:click={shuffle} class="px-4 py-2 bg-orange-500 rounded-lg"
+				>Shuffle</button
+			>
 			<button class="px-4 py-2 bg-orange-500 rounded-lg">Generate</button>
 		</div>
 	</div>
