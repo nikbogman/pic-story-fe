@@ -1,4 +1,5 @@
 <script>
+	import ShuffleBlocks from "./utils/ShuffleBlocks" 
 </script>
 
 <main class="flex flex-col h-screen">
@@ -10,7 +11,7 @@
 			<div class="h-20 aspect-square bg-orange-500 rounded-lg">Img</div>
 		</div>
 		<div class="flex items-center gap-4">
-			<button class="px-4 py-2 bg-orange-500 rounded-lg">Shuffle</button>
+			<button on:click={()=>{ShuffleBlocks(3)}} class="px-4 py-2 bg-orange-500 rounded-lg">Shuffle</button>
 			<button class="px-4 py-2 bg-orange-500 rounded-lg">Generate</button>
 		</div>
 	</div>
