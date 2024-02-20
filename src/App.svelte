@@ -21,9 +21,7 @@
 	<div class="flex gap-20 justify-center">
 		<div class="flex gap-4">
 			{#each sides as side}
-				<div class="h-20 aspect-square bg-orange-500 rounded-lg">
-					{side.img}
-				</div>
+				<img src={`/icons/${side.img}`} alt="sideImage" class="h-20 aspect-square bg-orange-500 rounded-lg" />
 			{/each}
 		</div>
 

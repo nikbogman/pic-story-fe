@@ -1,41 +1,56 @@
-//import { IconHeart } from '@tabler/icons-svelte';
-import FaAirFreshener from 'svelte-icons/fa/FaAirFreshener.svelte'
-import FaAppleAlt from 'svelte-icons/fa/FaAppleAlt.svelte'
-import FaBasketballBall from 'svelte-icons/fa/FaBasketballBall.svelte'
-import FaBandAid from 'svelte-icons/fa/FaBandAid.svelte'
-import FaBone from 'svelte-icons/fa/FaBone.svelte'
-import FaBurn from 'svelte-icons/fa/FaBurn.svelte'
-import FaCat from 'svelte-icons/fa/FaCat.svelte'
-import FaDog from 'svelte-icons/fa/FaDog.svelte'
-
-export default [[{
-    "img": FaAirFreshener,
-    "prompts": ["pyramid", "egupte", "history", "faron"]
-},
-{
-    "img": FaAppleAlt,
-    "prompts": ["flower", "nature", "beauty", "animals"]
-},
-{
-    "img": FaBasketballBall,
-    "prompts": ["dog", "friend", "trust", "protector"]
-},
-{
-    "img": FaBandAid,
-    "prompts": ["alient", "ufo", "human", "danger"]
-}], [{
-    "img": FaBone,
-    "prompts": ["pyramid", "egupte", "history", "faron"]
-},
-{
-    "img": FaBurn,
-    "prompts": ["flower", "nature", "beauty", "animals"]
-},
-{
-    "img": FaCat,
-    "prompts": ["dog", "friend", "trust", "protector"]
-},
-{
-    "img": FaDog,
-    "prompts": ["alient", "ufo", "human", "danger"]
-}]];
+export default [
+  [
+    {
+      img: "pyramid.jpg",
+      prompts: ["pyramid", "egupte", "history", "faron"],
+    },
+    {
+      img: "lion.jpg",
+      prompts: ["lion", "beast", "hunt", "danger"],
+    },
+    {
+      img: "ai.jpg",
+      prompts: ["ai", "intelligence", "prompt", "content"],
+    },
+    {
+      img: "bus.png",
+      prompts: ["bus", "students", "vehicle", "speed"],
+    },
+  ],
+  [
+    {
+      img: "dog.png",
+      prompts: ["dog", "friend", "loyal", "pet"],
+    },
+    {
+      img: "drink.png",
+      prompts: ["drink", "alcohol", "party", "fun"],
+    },
+    {
+      img: "elephant.jpg",
+      prompts: ["elephant", "aftrica", "big", "smelly"],
+    },
+    {
+      img: "flower.png",
+      prompts: ["flower", "beauty", "nature", "valley"],
+    },
+  ],
+  [
+    {
+      img: "human.jpg",
+      prompts: ["human", "hunter", "protector", "creator"],
+    },
+    {
+      img: "ps5.png",
+      prompts: ["playstation", "games", "addiction", "streaming"],
+    },
+    {
+      img: "teacher.png",
+      prompts: ["teacher", "study", "educate", "education"],
+    },
+    {
+      img: "university.png",
+      prompts: ["university", "teachers", "education", "smart"],
+    },
+  ],
+];
