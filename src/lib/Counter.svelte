@@ -5,6 +5,14 @@
 	};
 </script>
 
-<button class="bg-green-500" on:click={increment}>
-	count is {count}
-</button>
+<div class="h-screen p-16 grid grid-rows-6">
+	<div>Name</div>
+	<div class="row-span-2">
+		<div>Dices</div>
+		<div>
+			<button>1</button>
+			<button>2</button>
+		</div>
+	</div>
+	<div class="row-span-3">Text Image</div>
+</div>
