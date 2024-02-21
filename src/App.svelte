@@ -3,8 +3,8 @@
 	import dices from "./constants/dices";
   
 	let sides = [];
-	let generatedImage = ""; // Placeholder for the generated image URL
-	let generatedText = ""; // Placeholder for the generated text
+	let generatedImage = ""; 
+	let generatedText = ""; 
   
 	onMount(shuffle);
   
@@ -35,7 +35,7 @@
   
 	  if (response.ok) {
 		const data = await response.json();
-		generatedImage = data.output_url; // Assuming 'output_url' is the key where the image URL is stored
+		generatedImage = data.output_url; 
 	  } else {
 		console.error('Failed to create image');
 	  }
@@ -52,7 +52,7 @@
   
 	  if (response.ok) {
 		const data = await response.json();
-		generatedText = data.output; // Adjust based on the actual response structure
+		generatedText = data.output;
 	  } else {
 		console.error('Failed to generate text');
 	  }
